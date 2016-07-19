@@ -7,6 +7,11 @@ import {LogonPanelComponent} from "../../logon-panel-component/logon-panel.compo
 import {AuthService} from "../../auth-service/auth.service";
 import {DoseEventFabComponent} from "../../dose-event-fab/dose-event-fab.component";
 
+// (click) on the next arrow needs to call a nextPage function in your controller;
+// (click) on the prev arrow needs to call a previousPage function in the controller
+// both of these functions need to call into a new method in DoseEventService
+// DoseEventService.loadPage(currentView: Date, next: boolean)
+
 @Component(
     {
         templateUrl: "build/pages/dose/dose.html",

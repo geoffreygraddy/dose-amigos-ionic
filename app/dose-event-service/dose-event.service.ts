@@ -33,5 +33,11 @@ export class DoseEventService {
         );
     }
 
+    public loadPage(startAt: Date, dir: string){
+        return Promise.resolve(
+            DOSE_EVENTS
+        );
+    }
+
 }
 
